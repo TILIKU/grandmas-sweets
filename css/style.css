@@ -17,6 +17,24 @@ body {
   background: var(--white);
   color: var(--mainBlack);
 }
+.btn-pink{
+  color: var(--pink)!important;
+  border-color: var(--pink)!important;
+}
+.btn-pink:hover{
+  color: var(--black)!important;
+  background: var(--pink);
+  border-color: var(--pink)!important;
+}
+.btn-black{
+  color: var(--black)!important;
+  border-color: var(--black)!important;
+}
+.btn-black:hover{
+  color: var(--pink)!important;
+  background:var(--black)!important ;
+  border-color: var(--black)!important;
+}
 
 /* nav links */
 .navbar-toggler{
@@ -54,3 +72,52 @@ body {
   color: var(--white);
 }
 /* nav links end */
+/* banner */
+
+.max-height{
+  min-height: calc(100vh - 76px);
+  background:linear-gradient(var(--yellowTrans), var(--yellowTrans))
+  , url(../img/headerBcg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner{
+  color: var(--black);
+  margin-top: -4rem;
+}
+.banner-title{
+  color: var(--pink);
+}
+.banner-link{
+  color: var(--black);
+  border: 0.2rem solid var(--black);
+}
+.banner-link:hover{
+  background: var(--black);
+  color: var(--pink);
+}
+/* banner end */
+/* about */
+
+.about-img_container{
+  position: relative;
+}
+.about-img_container::before{
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.5rem solid var(--yellow);
+  z-index: -1;
+  transition: all 1s linear;
+}
+.about-img_container:hover:before{
+  top: 0;
+  left: 0;
+}
+/* about end */
