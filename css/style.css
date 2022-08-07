@@ -90,6 +90,7 @@ body {
 }
 .banner-title{
   color: var(--pink);
+  font-size: 4rem;
 }
 .banner-link{
   color: var(--black);
@@ -165,3 +166,16 @@ body {
 }
 
 /* store end */
+/* services */
+.services{
+  color: var(--white);
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6))
+  ,url(/img/servicesBcg.jpeg)center/cover fixed no-repeat;
+}
+.service-title{
+  letter-spacing: 0.5rem;
+}
+.service-text{
+  word-spacing: 0.3rem;
+}
+/* services end */
