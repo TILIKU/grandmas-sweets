@@ -101,6 +101,40 @@ body {
   color: var(--pink);
 }
 /* banner end */
+/* cart */
+
+.cart{
+  position: absolute;
+  min-height: 10rem;
+  background: rgba(255,255,255,0.7);
+  top:0;
+  right:0;
+  transition: all 0.3s ease-in-out;
+  width: 0;
+  overflow: hidden;
+}
+.show-cart{
+  width: 18rem;
+  padding:2rem 1.5rem;
+  transform: rotateY(-360deg);
+}
+.cart-item{
+  transition: all 2s ease-in-out;
+}
+.cart-item-remove{
+  color: var(--pink);
+  transition: all 2s ease-in-out;
+}
+.cart-item-remove:hover{
+  color: var(--black);
+  transform: scale(1.1);
+}
+.cart-item-price{
+  font-size: 0.8rem;
+}
+
+
+/* cart end */
 /* about */
 
 .about-img_container{
